@@ -295,6 +295,13 @@ p {
   transform-origin: top left;
 }
 
+.shadow {
+  height: 0.5rem;
+  width: 30rem;
+  border-radius: 50%;
+  background: radial-gradient(#c5c3c0, #d2dbff);
+}
+
 .tail:hover {
   animation: shake 100ms 10 ease-in-out;
 }
@@ -635,5 +642,9 @@ p {
   .leaf-four {
     width: 2.5rem;
     height: 0.75rem;
+  }
+
+  .shadow {
+    width: 15rem;
   }
 }

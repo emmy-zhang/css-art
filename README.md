@@ -3,7 +3,7 @@
 This is a submission for [Frontend Challenge - December Edition, CSS Art: December.](https://dev.to/challenges/frontend-2024-12-04)
 
 ### Inspiration
-After stumbling upon Bryan James' [site](http://species-in-pieces.com), where he creatde 30 endangered species utilizing CSS polygons, I took it as a sign to start experimenting with this nifty tool.
+After stumbling upon Bryan James' [site](http://species-in-pieces.com), where he created 30 endangered species utilizing CSS polygons, I took it as a sign to start experimenting with this nifty tool.
 
 ### Demo
 ![demo](https://github.com/user-attachments/assets/91e5d9b1-ad82-4823-8aa7-d26e8454e025)

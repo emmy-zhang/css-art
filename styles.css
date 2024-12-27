@@ -245,7 +245,7 @@ p {
   transform: rotate(-5deg);
 }
 
-.leaf-a {
+.leaf-one { 
   position: relative;
   width: 3rem;
   top: 0.75rem;
@@ -254,7 +254,7 @@ p {
   transform: rotate(55deg);
 }
 
-.leaf-b {
+.leaf-two { 
   position: relative;
   width: 5.5rem;
   top: -4.5rem;
@@ -262,7 +262,7 @@ p {
   transform: rotate(-50deg);
 }
 
-.leaf-one {
+.leaf-a {
   position: relative;
   width: 3rem;
   height: 1rem;
@@ -270,7 +270,7 @@ p {
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
-.leaf-two {
+.leaf-b {
   position: relative;
   width: 3rem;
   height: 1rem;
@@ -278,7 +278,7 @@ p {
   clip-path: polygon(00% 0%, 100% 0%, 50% 100%);
 }
 
-.leaf-three {
+.leaf-c {
   position: relative;
   width: 5rem;
   height: 1.5rem;
@@ -286,7 +286,7 @@ p {
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
-.leaf-four {
+.leaf-d {
   position: relative;
   width: 5rem;
   height: 1.5rem;
@@ -314,11 +314,11 @@ p {
   animation: lift-shake 200ms 10 ease-in-out;
 }
 
-.leaf-a:hover {
+.leaf-one:hover { 
   animation: quiver 150ms 5 ease-in-out;
 }
 
-.leaf-b:hover {
+.leaf-two:hover { 
   animation: sway 2000ms 5 ease-in-out;
 }
 
@@ -613,33 +613,33 @@ p {
     left: 8.625rem;
   }
 
-  .leaf-a {
+  .leaf-one { 
     width: 1.5rem;
     top: 0.375rem;
     left: -0.5rem;
   }
 
-  .leaf-b {
+  .leaf-two { 
     width: 2.75rem;
     top: -2.25rem;
   }
 
-  .leaf-one {
+  .leaf-a {
     width: 1.5rem;
     height: 0.5rem;
   }
 
-  .leaf-two {
+  .leaf-b {
     width: 1.5rem;
     height: 0.5rem;
   }
 
-  .leaf-three {
+  .leaf-c {
     width: 2.5rem;
     height: 0.75rem;
   }
 
-  .leaf-four {
+  .leaf-d {
     width: 2.5rem;
     height: 0.75rem;
   }

@@ -1,0 +1,633 @@
+.background-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  padding: 5rem;
+  background-color: #d2dbff;
+}
+
+.header {
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1,
+p {
+  color: #3b484b;
+  background-color: #ffefe9;
+  font-family: "Courier New", monospace;
+}
+
+h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #963024;
+  margin: 0 auto;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  padding-left: 0.5rem;
+  font-size: 4.5em;
+  animation: typing 2s steps(50, end), blink-caret 1s step-end infinite;
+}
+
+p {
+  max-width: max-content;
+}
+
+.bird-foliage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.bird {
+  height: 31rem;
+  width: 40rem;
+}
+
+.head {
+  height: 20rem;
+  width: 20rem;
+  transform: rotate(-15deg);
+  transition: transform 2000ms;
+  pointer-events: none;
+}
+
+.head-top,
+.cheek,
+.tuft {
+  pointer-events: auto;
+}
+
+.head:hover {
+  transform: rotate(-5deg);
+  transition: transform 500ms;
+}
+
+.beak {
+  position: relative;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: #c93f3b;
+  clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+  top: 7.5rem;
+}
+
+.head-top {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  background-color: #935653;
+  clip-path: polygon(0% 100%, 0% 25%, 100% 0%);
+  left: 5rem;
+}
+
+.cheek {
+  position: relative;
+  width: 10rem;
+  height: 7.5rem;
+  background-color: #ffefe9;
+  clip-path: polygon(75% 0%, 100% 100%, 0% 100%);
+  top: -7.5rem;
+  left: 5rem;
+}
+
+.tuft {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  background-color: #8c98c8;
+  clip-path: polygon(20% 100%, 0% 0%, 100% 40%);
+  top: -15rem;
+  left: 12.5rem;
+}
+
+.body {
+  position: relative;
+  top: -11.5rem;
+  left: 5.5rem;
+  height: 20rem;
+  width: 30rem;
+}
+
+.body-one {
+  position: relative;
+  width: 15rem;
+  height: 7.5rem;
+  background-color: #c5c3c0;
+  clip-path: polygon(35% 0%, 100% 80%, 0% 20%);
+  left: 4rem;
+}
+
+.body-two {
+  position: relative;
+  width: 4rem;
+  height: 15rem;
+  background-color: #c5c3c0;
+  clip-path: polygon(0% 68%, 100% 1%, 0% 8%);
+  top: -6rem;
+  transform: rotate(-3deg);
+  left: 0.25rem;
+}
+
+.body-three {
+  position: relative;
+  width: 19rem;
+  height: 10rem;
+  background-color: #cf4f38;
+  clip-path: polygon(18% 0%, 100% 48%, 0% 100%);
+  top: -20.9rem;
+  left: 0.5rem;
+}
+
+.body-four {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background-color: #935653;
+  clip-path: polygon(75% 0%, 100% 100%, 0% 90%);
+  top: -26.25rem;
+  left: 2rem;
+  transform: rotate(35deg);
+}
+
+.body-five {
+  position: relative;
+  width: 11.5rem;
+  height: 12rem;
+  background-color: #963024;
+  clip-path: polygon(0% 0%, 100% 67%, 0% 87%);
+  top: -32.35rem;
+  left: 9.5rem;
+  transform: rotate(21deg);
+  z-index: 2;
+}
+
+.body-six {
+  position: relative;
+  width: 7.5rem;
+  height: 13rem;
+  background-color: #f09c31;
+  clip-path: polygon(0% 0%, 100% 0%, 60% 100%);
+  top: -47.25rem;
+  left: 13.75rem;
+  transform: rotate(-15deg);
+}
+
+.tail {
+  position: relative;
+  width: 8rem;
+  height: 20rem;
+  background-color: #576366;
+  clip-path: polygon(0% 0%, 100% 90%, 7% 68%);
+  top: -61rem;
+  left: 19.5rem;
+}
+
+.leg-one {
+  position: relative;
+  width: 9rem;
+  height: 8rem;
+  background-color: #bc4630;
+  clip-path: polygon(70% 0%, 100% 0%, 40% 100%);
+  top: -69rem;
+  left: 5.5rem;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+
+.leg-two {
+  position: relative;
+  width: 9rem;
+  height: 8rem;
+  background-color: #bc4630;
+  clip-path: polygon(65% 0%, 100% 0%, 40% 100%);
+  top: -76.5rem;
+  left: 9rem;
+  transform: rotate(9deg);
+  z-index: 1;
+}
+
+.foliage {
+  position: relative;
+  width: 32rem;
+  top: -1rem;
+}
+
+.branch-one {
+  position: relative;
+  width: 20rem;
+  height: 2.5rem;
+  background-color: #9d7263;
+  clip-path: polygon(0% 10%, 100% 0%, 90% 100%);
+  top: 2rem;
+  transform: rotate(15deg);
+}
+
+.branch-two {
+  position: relative;
+  width: 14rem;
+  height: 1.7rem;
+  background-color: #775243;
+  clip-path: polygon(20% 0%, 100% 100%, 0% 100%);
+  top: 1.8rem;
+  left: 17.25rem;
+  transform: rotate(-5deg);
+}
+
+.leaf-a {
+  position: relative;
+  width: 3rem;
+  top: 0.75rem;
+  left: -1rem;
+  transform-origin: right;
+  transform: rotate(55deg);
+}
+
+.leaf-b {
+  position: relative;
+  width: 5.5rem;
+  top: -4.5rem;
+  transform-origin: right;
+  transform: rotate(-50deg);
+}
+
+.leaf-one {
+  position: relative;
+  width: 3rem;
+  height: 1rem;
+  background-color: #5e751f;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.leaf-two {
+  position: relative;
+  width: 3rem;
+  height: 1rem;
+  background-color: #7a8953;
+  clip-path: polygon(00% 0%, 100% 0%, 50% 100%);
+}
+
+.leaf-three {
+  position: relative;
+  width: 5rem;
+  height: 1.5rem;
+  background-color: #5e751f;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.leaf-four {
+  position: relative;
+  width: 5rem;
+  height: 1.5rem;
+  background-color: #7a8953;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  transform-origin: top left;
+}
+
+.tail:hover {
+  animation: shake 100ms 10 ease-in-out;
+}
+
+.leg-one:hover {
+  animation: lift-shake 200ms 10 ease-in-out;
+}
+
+.leg-two:hover {
+  animation: lift-shake 200ms 10 ease-in-out;
+}
+
+.leaf-a:hover {
+  animation: quiver 150ms 5 ease-in-out;
+}
+
+.leaf-b:hover {
+  animation: sway 2000ms 5 ease-in-out;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #963024;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(2px, 0);
+  }
+  25% {
+    transform: translate(-2px, 0);
+  }
+  50% {
+    transform: translate(2px, 0);
+  }
+  75% {
+    transform: translate(-2px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes lift-shake {
+  0% {
+    transform: rotate(-10deg);
+    transform: translate(5px, -10px);
+  }
+  25% {
+    transform: rotate(-10deg);
+    transform: translate(-5px, -10px);
+  }
+  50% {
+    transform: rotate(-10deg);
+    transform: translate(5px, -10px);
+  }
+  75% {
+    transform: rotate(-10deg);
+    transform: translate(-5px, -10px);
+  }
+  100% {
+    transform: rotate(-10deg);
+    transform: translate(0, -10px);
+  }
+}
+
+@keyframes quiver {
+  0% {
+    transform: rotate(60deg);
+  }
+  25% {
+    transform: rotate(55deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-52deg);
+  }
+  5% {
+    transform: rotate(-53deg);
+  }
+  10% {
+    transform: rotate(-55deg);
+  }
+  15% {
+    transform: rotate(-57deg);
+  }
+  20% {
+    transform: rotate(-59deg);
+  }
+  25% {
+    transform: rotate(-60deg);
+  }
+  30% {
+    transform: rotate(-59deg);
+  }
+  35% {
+    transform: rotate(-57deg);
+  }
+  40% {
+    transform: rotate(-55deg);
+  }
+  45% {
+    transform: rotate(-52deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  55% {
+    transform: rotate(-49deg);
+  }
+  60% {
+    transform: rotate(-48deg);
+  }
+  65% {
+    transform: rotate(-47deg);
+  }
+  70% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(-42deg);
+  }
+  80% {
+    transform: rotate(-40deg);
+  }
+  85% {
+    transform: rotate(-42deg);
+  }
+  90% {
+    transform: rotate(-45deg);
+  }
+  95% {
+    transform: rotate(-47deg);
+  }
+  100% {
+    transform: rotate(-49deg);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .head,
+  .tuft,
+  .leg-one,
+  .leg-two,
+  .leaf-one,
+  .leaf-two {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .background-frame {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .bird {
+    height: 15.5rem;
+    width: 20rem;
+  }
+
+  .head {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .beak {
+    width: 2.5rem;
+    height: 1.25rem;
+    top: 3.75rem;
+  }
+
+  .head-top {
+    width: 3.75rem;
+    height: 3.75rem;
+    left: 2.5rem;
+  }
+
+  .cheek {
+    width: 5rem;
+    height: 3.75rem;
+    top: -3.75rem;
+    left: 2.5rem;
+  }
+
+  .tuft {
+    width: 2rem;
+    height: 1rem;
+    top: -7.5rem;
+    left: 6.25rem;
+  }
+
+  .body {
+    height: 5rem;
+    width: 7.5rem;
+    top: -5.75rem;
+    left: 2.75rem;
+  }
+
+  .body-one {
+    width: 7.5rem;
+    height: 3.75rem;
+    left: 2rem;
+  }
+
+  .body-two {
+    width: 2rem;
+    height: 7.5rem;
+    top: -3rem;
+    left: 0.125rem;
+  }
+
+  .body-three {
+    width: 9.5rem;
+    height: 5rem;
+    top: -10.45rem;
+    left: 0.25rem;
+  }
+
+  .body-four {
+    width: 5rem;
+    height: 5rem;
+    top: -13.125rem;
+    left: 1rem;
+  }
+
+  .body-five {
+    width: 5.75rem;
+    height: 6rem;
+    top: -16.1725rem;
+    left: 4.75rem;
+  }
+
+  .body-six {
+    width: 3.75rem;
+    height: 6.5rem;
+    top: -23.625rem;
+    left: 6.875rem;
+  }
+
+  .tail {
+    width: 4rem;
+    height: 10rem;
+    top: -30.5rem;
+    left: 9.75rem;
+  }
+
+  .leg-one {
+    width: 4.5rem;
+    height: 4rem;
+    top: -34.5rem;
+    left: 2.75rem;
+  }
+
+  .leg-two {
+    width: 4.5rem;
+    height: 4rem;
+    top: -38.25rem;
+    left: 4.5rem;
+  }
+
+  .foliage {
+    width: 16rem;
+    top: -0.5rem;
+  }
+
+  .branch-one {
+    width: 10rem;
+    height: 1.25rem;
+    top: 1rem;
+  }
+
+  .branch-two {
+    width: 7rem;
+    height: 0.85rem;
+    top: 0.9rem;
+    left: 8.625rem;
+  }
+
+  .leaf-a {
+    width: 1.5rem;
+    top: 0.375rem;
+    left: -0.5rem;
+  }
+
+  .leaf-b {
+    width: 2.75rem;
+    top: -2.25rem;
+  }
+
+  .leaf-one {
+    width: 1.5rem;
+    height: 0.5rem;
+  }
+
+  .leaf-two {
+    width: 1.5rem;
+    height: 0.5rem;
+  }
+
+  .leaf-three {
+    width: 2.5rem;
+    height: 0.75rem;
+  }
+
+  .leaf-four {
+    width: 2.5rem;
+    height: 0.75rem;
+  }
+}
